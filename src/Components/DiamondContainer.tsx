@@ -8,8 +8,8 @@ interface DiamondContainerProps {
 export default function DiamondContainer({  data    }: DiamondContainerProps) {
     return (
         <div className="DiamondContainer">
-            {data.map((listing) =>(
-                <DiamondCard key={listing.id} {...listing}
+            {data.map((list) =>(
+                <DiamondCard key={list.id} {...list}
                 />
             ))}
         </div>
